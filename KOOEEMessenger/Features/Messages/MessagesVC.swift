@@ -13,6 +13,6 @@ class MessagesVC: CustomViewController {
         super.viewDidLoad()
         self.segmentedControl.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 20)], for: .normal)
         self.navigationItem.rightBarButtonItem = nil
-        self.navigationItem.title = "Messages"
+        self.navigationItem.title = MESSAGES
     }
 }

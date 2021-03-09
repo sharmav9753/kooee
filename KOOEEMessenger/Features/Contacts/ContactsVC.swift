@@ -7,6 +7,6 @@ class ContactsVC: CustomViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Contacts"
+        self.navigationItem.title = CONTACTS
     }
 }
