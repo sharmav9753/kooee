@@ -9,6 +9,7 @@ class WalletVC: CustomViewController {
             image: imagePlus,
             style: .plain, target: self, action: #selector(rightButtonClicked)
         )
+        self.navigationItem.title = "KOOEE"
     }
 
     @objc override func rightButtonClicked() {

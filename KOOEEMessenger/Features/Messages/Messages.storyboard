@@ -14,13 +14,31 @@
                     <view key="view" contentMode="scaleToFill" id="sPx-Q2-f4b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3He-bv-hM4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="62.5"/>
+                                <segments>
+                                    <segment title="Messages"/>
+                                    <segment title="Rooms"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ejM-0l-LAT"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3He-bv-hM4" firstAttribute="centerX" secondItem="sPx-Q2-f4b" secondAttribute="centerX" id="6hW-iR-iWR"/>
+                            <constraint firstItem="3He-bv-hM4" firstAttribute="height" secondItem="ejM-0l-LAT" secondAttribute="height" multiplier="0.075" id="AiQ-DW-sDJ"/>
+                            <constraint firstItem="3He-bv-hM4" firstAttribute="leading" secondItem="ejM-0l-LAT" secondAttribute="leading" id="a6u-XQ-pes"/>
+                            <constraint firstItem="3He-bv-hM4" firstAttribute="top" secondItem="ejM-0l-LAT" secondAttribute="top" id="qsz-vO-f9g"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="3He-bv-hM4" id="Bm8-yu-qwm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAS-m2-er4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261" y="94"/>
+            <point key="canvasLocation" x="351" y="19"/>
         </scene>
     </scenes>
 </document>

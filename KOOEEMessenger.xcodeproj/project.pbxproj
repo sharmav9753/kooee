@@ -21,8 +21,8 @@
 		FC614E1325EE70D300286547 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614E0725EE70D300286547 /* Add.storyboard */; };
 		FC614E1425EE70D300286547 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614E0925EE70D300286547 /* Wallet.storyboard */; };
 		FC614E1525EE70D300286547 /* WalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E0A25EE70D300286547 /* WalletVC.swift */; };
-		FC614E1625EE70D300286547 /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614E0C25EE70D300286547 /* Play.storyboard */; };
-		FC614E1725EE70D300286547 /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E0D25EE70D300286547 /* PlayVC.swift */; };
+		FC614E1625EE70D300286547 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614E0C25EE70D300286547 /* Content.storyboard */; };
+		FC614E1725EE70D300286547 /* ContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E0D25EE70D300286547 /* ContentVC.swift */; };
 		FC614E1E25EE71E600286547 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC614E1A25EE71E600286547 /* SettingCell.xib */; };
 		FC614E1F25EE71E600286547 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E1B25EE71E600286547 /* SettingsVC.swift */; };
 		FC614E2025EE71E600286547 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614E1C25EE71E600286547 /* Settings.storyboard */; };
@@ -47,8 +47,8 @@
 		FC614E0725EE70D300286547 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		FC614E0925EE70D300286547 /* Wallet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
 		FC614E0A25EE70D300286547 /* WalletVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletVC.swift; sourceTree = "<group>"; };
-		FC614E0C25EE70D300286547 /* Play.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Play.storyboard; sourceTree = "<group>"; };
-		FC614E0D25EE70D300286547 /* PlayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
+		FC614E0C25EE70D300286547 /* Content.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Content.storyboard; sourceTree = "<group>"; };
+		FC614E0D25EE70D300286547 /* ContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentVC.swift; sourceTree = "<group>"; };
 		FC614E1A25EE71E600286547 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 		FC614E1B25EE71E600286547 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		FC614E1C25EE71E600286547 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -150,8 +150,8 @@
 		FC614E0B25EE70D300286547 /* Play */ = {
 			isa = PBXGroup;
 			children = (
-				FC614E0C25EE70D300286547 /* Play.storyboard */,
-				FC614E0D25EE70D300286547 /* PlayVC.swift */,
+				FC614E0C25EE70D300286547 /* Content.storyboard */,
+				FC614E0D25EE70D300286547 /* ContentVC.swift */,
 			);
 			path = Play;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 				FC614DF325EE6FA100286547 /* Assets.xcassets in Resources */,
 				FC614E1125EE70D300286547 /* Contacts.storyboard in Resources */,
 				FC614E1E25EE71E600286547 /* SettingCell.xib in Resources */,
-				FC614E1625EE70D300286547 /* Play.storyboard in Resources */,
+				FC614E1625EE70D300286547 /* Content.storyboard in Resources */,
 				FC614E0E25EE70D300286547 /* Messages.storyboard in Resources */,
 				FC614E1325EE70D300286547 /* Add.storyboard in Resources */,
 				FC614DF125EE6F9F00286547 /* Main.storyboard in Resources */,
@@ -259,7 +259,7 @@
 				FC614DEA25EE6F9F00286547 /* AppDelegate.swift in Sources */,
 				FC614DEC25EE6F9F00286547 /* SceneDelegate.swift in Sources */,
 				FC614E2A25EE922000286547 /* RoundedCornerView.swift in Sources */,
-				FC614E1725EE70D300286547 /* PlayVC.swift in Sources */,
+				FC614E1725EE70D300286547 /* ContentVC.swift in Sources */,
 				FC465E7C25EF56740023A845 /* CustomViewController.swift in Sources */,
 				FC614E1025EE70D300286547 /* ContactsVC.swift in Sources */,
 				FC614E2125EE71E600286547 /* SettingCell.swift in Sources */,

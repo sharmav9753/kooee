@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mR1-Ab-tNP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ContentVC-->
+        <scene sceneID="yfo-LQ-5m9">
+            <objects>
+                <viewController storyboardIdentifier="Content" id="mR1-Ab-tNP" customClass="ContentVC" customModule="KOOEEMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dwM-w6-l8t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unb-oK-Kfg">
+                                <rect key="frame" x="169" y="436" width="76" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aKf-aK-kdg">
+                                <rect key="frame" x="176.5" y="471" width="61" height="59"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aKf-aK-kdg" secondAttribute="height" id="fmp-KP-lbB"/>
+                                </constraints>
+                                <imageReference key="image" image="play.rectangle" catalog="system" renderingMode="template"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LI7-9I-VQe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aKf-aK-kdg" firstAttribute="top" secondItem="Unb-oK-Kfg" secondAttribute="bottom" constant="10" id="9aW-bN-hT4"/>
+                            <constraint firstItem="aKf-aK-kdg" firstAttribute="centerX" secondItem="dwM-w6-l8t" secondAttribute="centerX" id="Fde-44-VdT"/>
+                            <constraint firstItem="Unb-oK-Kfg" firstAttribute="centerY" secondItem="dwM-w6-l8t" secondAttribute="centerY" id="b5a-S4-81O"/>
+                            <constraint firstItem="Unb-oK-Kfg" firstAttribute="centerX" secondItem="dwM-w6-l8t" secondAttribute="centerX" id="bce-vL-hBA"/>
+                            <constraint firstItem="aKf-aK-kdg" firstAttribute="height" secondItem="LI7-9I-VQe" secondAttribute="height" multiplier="0.075" id="tXH-iR-7Zo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ic9-Yq-lQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play.rectangle" catalog="system" width="128" height="93"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
