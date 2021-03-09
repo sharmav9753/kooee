@@ -1,7 +1,11 @@
 import Foundation
 import UIKit
+import SideMenu
 
 class CustomViewController: UIViewController {
+
+    //MARK: Lifecycle methods
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let imageSettings = UIImage(systemName: "line.horizontal.3")
@@ -14,6 +18,9 @@ class CustomViewController: UIViewController {
             image: imagePlus,
             style: .plain, target: self, action: #selector(rightButtonClicked)
         )
+        self.navigationItem.leftBarButtonItem?.tintColor = .black
+        self.navigationItem.rightBarButtonItem?.tintColor = .black
+        self.navigationController?.navigationBar.barTintColor = UIColor.primary
     }
 
     @objc func showSettings() {
