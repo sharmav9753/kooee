@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,10 +11,13 @@
         <scene sceneID="OJI-rt-7LP">
             <objects>
                 <tabBarController id="bhR-NH-3lu" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kdk-k0-yfn">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Kdk-k0-yfn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="primaryColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="primaryColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="xDD-x0-0zk" kind="relationship" relationship="viewControllers" id="g5q-vP-ua3"/>
@@ -31,7 +35,7 @@
         <scene sceneID="ObQ-He-WFR">
             <objects>
                 <navigationController id="yhz-sa-3xE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="play.rectangle" catalog="system" selectedImage="play.rectangle" id="2np-sk-Ydb"/>
+                    <tabBarItem key="tabBarItem" title="" image="video" selectedImage="video" id="2np-sk-Ydb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VOq-Fx-jTo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -48,7 +52,7 @@
         <scene sceneID="3jF-KN-cro">
             <objects>
                 <navigationController id="Fav-9g-isJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="wallet.pass" catalog="system" selectedImage="wallet.pass" id="vYc-jv-mjz"/>
+                    <tabBarItem key="tabBarItem" title="" image="wallet" selectedImage="wallet" id="vYc-jv-mjz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PXT-vc-3nM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -65,7 +69,7 @@
         <scene sceneID="FjD-w0-FTi">
             <objects>
                 <navigationController id="BYa-68-QR3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" selectedImage="plus" id="kaT-d9-lMn"/>
+                    <tabBarItem key="tabBarItem" title="" image="add" selectedImage="add" id="kaT-d9-lMn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4bI-b9-BDf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -82,7 +86,7 @@
         <scene sceneID="gYF-xv-P2F">
             <objects>
                 <navigationController id="rPj-dA-RfF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person" id="rqO-rd-xIS"/>
+                    <tabBarItem key="tabBarItem" title="" image="user" selectedImage="user" id="rqO-rd-xIS"/>
                     <navigationItem key="navigationItem" id="Mn4-yi-vtt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FNn-Dx-agR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -100,7 +104,7 @@
         <scene sceneID="Ue5-BL-eIM">
             <objects>
                 <navigationController id="xDD-x0-0zk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="mail" catalog="system" selectedImage="mail" id="6jy-Gv-kwd"/>
+                    <tabBarItem key="tabBarItem" title="" image="mail" selectedImage="mail" id="6jy-Gv-kwd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2E3-ZA-7eP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -165,10 +169,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="mail" catalog="system" width="128" height="93"/>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="play.rectangle" catalog="system" width="128" height="93"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="wallet.pass" catalog="system" width="115" height="128"/>
+        <image name="add" width="40" height="40"/>
+        <image name="mail" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
+        <image name="video" width="24" height="24"/>
+        <image name="wallet" width="24" height="24"/>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.48627450980392156" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

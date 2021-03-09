@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		486F910287DE05334D2F8CBD /* Pods_KOOEEMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C53B446DCF0656AB0B9B50A /* Pods_KOOEEMessenger.framework */; };
+		FC07E28625F646AD00960319 /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC07E28525F646AD00960319 /* SettingItem.swift */; };
+		FC07E28A25F66BE000960319 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC07E28925F66BE000960319 /* Constants.swift */; };
+		FC07E29325F6ABB300960319 /* KMCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC07E29225F6ABB300960319 /* KMCustomButton.swift */; };
 		FC465E7C25EF56740023A845 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E7B25EF56740023A845 /* CustomViewController.swift */; };
+		FC50D25F25F74A12001F29A4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC50D25E25F74A12001F29A4 /* Colors.swift */; };
+		FC50D26925F751F7001F29A4 /* StringsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC50D26825F751F7001F29A4 /* StringsFile.swift */; };
 		FC614DEA25EE6F9F00286547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614DE925EE6F9F00286547 /* AppDelegate.swift */; };
 		FC614DEC25EE6F9F00286547 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614DEB25EE6F9F00286547 /* SceneDelegate.swift */; };
 		FC614DF125EE6F9F00286547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614DEF25EE6F9F00286547 /* Main.storyboard */; };
@@ -28,10 +34,38 @@
 		FC614E2025EE71E600286547 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614E1C25EE71E600286547 /* Settings.storyboard */; };
 		FC614E2125EE71E600286547 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E1D25EE71E600286547 /* SettingCell.swift */; };
 		FC614E2A25EE922000286547 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E2925EE922000286547 /* RoundedCornerView.swift */; };
+		FCE9335225F0EC630061E8DB /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9335125F0EC630061E8DB /* HTTPMethod.swift */; };
+		FCE9335625F0EC880061E8DB /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9335525F0EC880061E8DB /* EndPointType.swift */; };
+		FCE9335925F0ECAF0061E8DB /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9335825F0ECAF0061E8DB /* HTTPTask.swift */; };
+		FCE9335C25F0ECE80061E8DB /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9335B25F0ECE80061E8DB /* NetworkRouter.swift */; };
+		FCE9335F25F0ED040061E8DB /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9335E25F0ED040061E8DB /* NetworkLogger.swift */; };
+		FCE9336225F0ED210061E8DB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9336125F0ED210061E8DB /* Router.swift */; };
+		FCE9336525F0ED4D0061E8DB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9336425F0ED4D0061E8DB /* NetworkManager.swift */; };
+		FCE9336825F0EDC90061E8DB /* CryptoCurrencyEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9336725F0EDC90061E8DB /* CryptoCurrencyEndPoints.swift */; };
+		FCE9336B25F0EE020061E8DB /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9336A25F0EE020061E8DB /* JSONParameterEncoder.swift */; };
+		FCE9336E25F0EE200061E8DB /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9336D25F0EE200061E8DB /* ParameterEncoding.swift */; };
+		FCE9337125F0EE3D0061E8DB /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9337025F0EE3D0061E8DB /* URLParameterEncoder.swift */; };
+		FCE9337525F0F0520061E8DB /* GetCryptoBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9337425F0F0520061E8DB /* GetCryptoBalance.swift */; };
+		FCE9337925F0F5550061E8DB /* CryptoBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9337825F0F5550061E8DB /* CryptoBalance.swift */; };
+		FCE9338325F10AC00061E8DB /* BitcoinRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9338225F10AC00061E8DB /* BitcoinRate.swift */; };
+		FCE9338625F10E530061E8DB /* GetBitcoinRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9338525F10E530061E8DB /* GetBitcoinRate.swift */; };
+		FCE9338A25F112040061E8DB /* CryptoRatesEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9338925F112040061E8DB /* CryptoRatesEndPoints.swift */; };
+		FCE933EE25F125850061E8DB /* WalletPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE933ED25F125850061E8DB /* WalletPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30D8D5A00A8D040FB85455CB /* Pods-KOOEEMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KOOEEMessenger.debug.xcconfig"; path = "Target Support Files/Pods-KOOEEMessenger/Pods-KOOEEMessenger.debug.xcconfig"; sourceTree = "<group>"; };
+		7C53B446DCF0656AB0B9B50A /* Pods_KOOEEMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KOOEEMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D081716EB48AEC654E14973 /* Pods-KOOEEMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KOOEEMessenger.release.xcconfig"; path = "Target Support Files/Pods-KOOEEMessenger/Pods-KOOEEMessenger.release.xcconfig"; sourceTree = "<group>"; };
+		FC07E28525F646AD00960319 /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
+		FC07E28925F66BE000960319 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FC07E29225F6ABB300960319 /* KMCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMCustomButton.swift; sourceTree = "<group>"; };
 		FC465E7B25EF56740023A845 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		FC50D25725F6B146001F29A4 /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		FC50D25825F6B146001F29A4 /* SFProDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Light.ttf"; sourceTree = "<group>"; };
+		FC50D25925F6B146001F29A4 /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		FC50D25E25F74A12001F29A4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FC50D26825F751F7001F29A4 /* StringsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsFile.swift; sourceTree = "<group>"; };
 		FC614DE625EE6F9F00286547 /* KOOEEMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOOEEMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC614DE925EE6F9F00286547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC614DEB25EE6F9F00286547 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +88,23 @@
 		FC614E1C25EE71E600286547 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		FC614E1D25EE71E600286547 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		FC614E2925EE922000286547 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		FCE9335125F0EC630061E8DB /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		FCE9335525F0EC880061E8DB /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		FCE9335825F0ECAF0061E8DB /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		FCE9335B25F0ECE80061E8DB /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		FCE9335E25F0ED040061E8DB /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		FCE9336125F0ED210061E8DB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FCE9336425F0ED4D0061E8DB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FCE9336725F0EDC90061E8DB /* CryptoCurrencyEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyEndPoints.swift; sourceTree = "<group>"; };
+		FCE9336A25F0EE020061E8DB /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		FCE9336D25F0EE200061E8DB /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		FCE9337025F0EE3D0061E8DB /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		FCE9337425F0F0520061E8DB /* GetCryptoBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCryptoBalance.swift; sourceTree = "<group>"; };
+		FCE9337825F0F5550061E8DB /* CryptoBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoBalance.swift; sourceTree = "<group>"; };
+		FCE9338225F10AC00061E8DB /* BitcoinRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinRate.swift; sourceTree = "<group>"; };
+		FCE9338525F10E530061E8DB /* GetBitcoinRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBitcoinRate.swift; sourceTree = "<group>"; };
+		FCE9338925F112040061E8DB /* CryptoRatesEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRatesEndPoints.swift; sourceTree = "<group>"; };
+		FCE933ED25F125850061E8DB /* WalletPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +112,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486F910287DE05334D2F8CBD /* Pods_KOOEEMessenger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		541CF1FEBDCE1660FAD85752 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30D8D5A00A8D040FB85455CB /* Pods-KOOEEMessenger.debug.xcconfig */,
+				9D081716EB48AEC654E14973 /* Pods-KOOEEMessenger.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4E6AEF637C26BDC3EEE29F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C53B446DCF0656AB0B9B50A /* Pods_KOOEEMessenger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC07E28825F66B7300960319 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FC07E28925F66BE000960319 /* Constants.swift */,
+				FC50D25E25F74A12001F29A4 /* Colors.swift */,
+				FC50D26825F751F7001F29A4 /* StringsFile.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FC50D25B25F6B168001F29A4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FC50D25725F6B146001F29A4 /* SFProDisplay-Bold.ttf */,
+				FC50D25825F6B146001F29A4 /* SFProDisplay-Light.ttf */,
+				FC50D25925F6B146001F29A4 /* SFProDisplay-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FC50D26525F74D86001F29A4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FC614DE925EE6F9F00286547 /* AppDelegate.swift */,
+				FC614DEB25EE6F9F00286547 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		FC614DDD25EE6F9F00286547 = {
 			isa = PBXGroup;
 			children = (
 				FC614DE825EE6F9F00286547 /* KOOEEMessenger */,
 				FC614DE725EE6F9F00286547 /* Products */,
+				541CF1FEBDCE1660FAD85752 /* Pods */,
+				B4E6AEF637C26BDC3EEE29F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,10 +186,13 @@
 		FC614DE825EE6F9F00286547 /* KOOEEMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				FC50D25B25F6B168001F29A4 /* Fonts */,
+				FC07E28825F66B7300960319 /* Helper */,
+				FCE9337725F0F53F0061E8DB /* Models */,
+				FCE9328425F0AA400061E8DB /* Utilities */,
 				FC614E2825EE91E100286547 /* Reusable Classes */,
 				FC614DFE25EE70D300286547 /* Features */,
-				FC614DE925EE6F9F00286547 /* AppDelegate.swift */,
-				FC614DEB25EE6F9F00286547 /* SceneDelegate.swift */,
+				FC50D26525F74D86001F29A4 /* AppDelegate */,
 				FC614DEF25EE6F9F00286547 /* Main.storyboard */,
 				FC614DF225EE6FA100286547 /* Assets.xcassets */,
 				FC614DF425EE6FA100286547 /* LaunchScreen.storyboard */,
@@ -143,6 +246,7 @@
 			children = (
 				FC614E0925EE70D300286547 /* Wallet.storyboard */,
 				FC614E0A25EE70D300286547 /* WalletVC.swift */,
+				FCE933ED25F125850061E8DB /* WalletPresenter.swift */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -172,8 +276,88 @@
 			children = (
 				FC614E2925EE922000286547 /* RoundedCornerView.swift */,
 				FC465E7B25EF56740023A845 /* CustomViewController.swift */,
+				FC07E29225F6ABB300960319 /* KMCustomButton.swift */,
 			);
 			path = "Reusable Classes";
+			sourceTree = "<group>";
+		};
+		FCE9328425F0AA400061E8DB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9334625F0EB030061E8DB /* NetworkLayer */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FCE9334625F0EB030061E8DB /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9337325F0F03D0061E8DB /* APIs */,
+				FCE9334A25F0EB2E0061E8DB /* Encoding */,
+				FCE9334925F0EB200061E8DB /* Service */,
+				FCE9334825F0EB180061E8DB /* EndPoints */,
+				FCE9334725F0EB0E0061E8DB /* NetworkManager */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		FCE9334725F0EB0E0061E8DB /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9336425F0ED4D0061E8DB /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		FCE9334825F0EB180061E8DB /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9336725F0EDC90061E8DB /* CryptoCurrencyEndPoints.swift */,
+				FCE9338925F112040061E8DB /* CryptoRatesEndPoints.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		FCE9334925F0EB200061E8DB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9335125F0EC630061E8DB /* HTTPMethod.swift */,
+				FCE9335525F0EC880061E8DB /* EndPointType.swift */,
+				FCE9335825F0ECAF0061E8DB /* HTTPTask.swift */,
+				FCE9335B25F0ECE80061E8DB /* NetworkRouter.swift */,
+				FCE9335E25F0ED040061E8DB /* NetworkLogger.swift */,
+				FCE9336125F0ED210061E8DB /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FCE9334A25F0EB2E0061E8DB /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9336A25F0EE020061E8DB /* JSONParameterEncoder.swift */,
+				FCE9336D25F0EE200061E8DB /* ParameterEncoding.swift */,
+				FCE9337025F0EE3D0061E8DB /* URLParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		FCE9337325F0F03D0061E8DB /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9337425F0F0520061E8DB /* GetCryptoBalance.swift */,
+				FCE9338525F10E530061E8DB /* GetBitcoinRate.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		FCE9337725F0F53F0061E8DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9337825F0F5550061E8DB /* CryptoBalance.swift */,
+				FCE9338225F10AC00061E8DB /* BitcoinRate.swift */,
+				FC07E28525F646AD00960319 /* SettingItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,9 +367,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC614DFA25EE6FA100286547 /* Build configuration list for PBXNativeTarget "KOOEEMessenger" */;
 			buildPhases = (
+				D68448B78DAA831D6BB7A0CB /* [CP] Check Pods Manifest.lock */,
 				FC614DE225EE6F9F00286547 /* Sources */,
 				FC614DE325EE6F9F00286547 /* Frameworks */,
 				FC614DE425EE6F9F00286547 /* Resources */,
+				EC19F62CC07F75A575A0F88D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,20 +434,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D68448B78DAA831D6BB7A0CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KOOEEMessenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC19F62CC07F75A575A0F88D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KOOEEMessenger/Pods-KOOEEMessenger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KOOEEMessenger/Pods-KOOEEMessenger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KOOEEMessenger/Pods-KOOEEMessenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC614DE225EE6F9F00286547 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE9336E25F0EE200061E8DB /* ParameterEncoding.swift in Sources */,
+				FCE9336B25F0EE020061E8DB /* JSONParameterEncoder.swift in Sources */,
+				FCE9336525F0ED4D0061E8DB /* NetworkManager.swift in Sources */,
+				FCE9338325F10AC00061E8DB /* BitcoinRate.swift in Sources */,
+				FCE9338625F10E530061E8DB /* GetBitcoinRate.swift in Sources */,
+				FC07E28A25F66BE000960319 /* Constants.swift in Sources */,
+				FCE9335925F0ECAF0061E8DB /* HTTPTask.swift in Sources */,
 				FC614E1225EE70D300286547 /* AddVC.swift in Sources */,
+				FCE9337925F0F5550061E8DB /* CryptoBalance.swift in Sources */,
+				FCE9335C25F0ECE80061E8DB /* NetworkRouter.swift in Sources */,
 				FC614E0F25EE70D300286547 /* MessagesVC.swift in Sources */,
+				FCE9335625F0EC880061E8DB /* EndPointType.swift in Sources */,
 				FC614E1525EE70D300286547 /* WalletVC.swift in Sources */,
 				FC614DEA25EE6F9F00286547 /* AppDelegate.swift in Sources */,
+				FCE9338A25F112040061E8DB /* CryptoRatesEndPoints.swift in Sources */,
+				FCE9337525F0F0520061E8DB /* GetCryptoBalance.swift in Sources */,
 				FC614DEC25EE6F9F00286547 /* SceneDelegate.swift in Sources */,
+				FC07E28625F646AD00960319 /* SettingItem.swift in Sources */,
+				FCE9335F25F0ED040061E8DB /* NetworkLogger.swift in Sources */,
+				FCE9337125F0EE3D0061E8DB /* URLParameterEncoder.swift in Sources */,
 				FC614E2A25EE922000286547 /* RoundedCornerView.swift in Sources */,
+				FCE9336225F0ED210061E8DB /* Router.swift in Sources */,
+				FC50D26925F751F7001F29A4 /* StringsFile.swift in Sources */,
 				FC614E1725EE70D300286547 /* ContentVC.swift in Sources */,
 				FC465E7C25EF56740023A845 /* CustomViewController.swift in Sources */,
 				FC614E1025EE70D300286547 /* ContactsVC.swift in Sources */,
+				FC50D25F25F74A12001F29A4 /* Colors.swift in Sources */,
+				FCE9336825F0EDC90061E8DB /* CryptoCurrencyEndPoints.swift in Sources */,
+				FC07E29325F6ABB300960319 /* KMCustomButton.swift in Sources */,
+				FCE9335225F0EC630061E8DB /* HTTPMethod.swift in Sources */,
+				FCE933EE25F125850061E8DB /* WalletPresenter.swift in Sources */,
 				FC614E2125EE71E600286547 /* SettingCell.swift in Sources */,
 				FC614E1F25EE71E600286547 /* SettingsVC.swift in Sources */,
 			);
@@ -407,11 +657,13 @@
 		};
 		FC614DFB25EE6FA100286547 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D8D5A00A8D040FB85455CB /* Pods-KOOEEMessenger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KOOEEMessenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,11 +677,13 @@
 		};
 		FC614DFC25EE6FA100286547 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D081716EB48AEC654E14973 /* Pods-KOOEEMessenger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KOOEEMessenger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
