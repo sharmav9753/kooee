@@ -17,10 +17,22 @@ class CustomViewController: UIViewController {
     }
 
     @objc func showSettings() {
-        let settingsStoryboard = UIStoryboard(name: "Settings", bundle: nil)
+        let settingsStoryboard = UIStoryboard(name: StoryboardName.Settings.rawValue, bundle: nil)
         self.navigationController?.present(
-            settingsStoryboard.instantiateViewController(withIdentifier: "Settings"), animated: true
+            createSideMenu(with: settingsStoryboard.instantiateViewController(withIdentifier: StoryboardIdentifire.Settings.rawValue)),
+            animated: true
         )
+    }
+    
+    func createSideMenu(with vc: UIViewController) -> UIViewController {
+        let bounds = UIScreen.main.bounds
+        let width = bounds.size.width
+        
+        let sideMenu = SideMenuNavigationController(rootViewController:vc)
+        sideMenu.leftSide = true
+        sideMenu.menuWidth = width
+        
+        return sideMenu
     }
 
     @objc func rightButtonClicked() {
