@@ -1,8 +1,12 @@
-//
-//  RoundedCornerView.swift
-//  KOOEEMessenger
-//
-//  Created by Deqode on 02/03/21.
-//
-
 import Foundation
+import UIKit
+
+@IBDesignable
+class RoundedCornerView: UIView {
+
+    @IBInspectable var cornerRadius: CGFloat = 10.0 {
+        didSet {
+            self.layer.cornerRadius = cornerRadius
+        }
+    }
+}

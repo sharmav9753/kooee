@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FC614DEA25EE6F9F00286547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614DE925EE6F9F00286547 /* AppDelegate.swift */; };
 		FC614DEC25EE6F9F00286547 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614DEB25EE6F9F00286547 /* SceneDelegate.swift */; };
-		FC614DEE25EE6F9F00286547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614DED25EE6F9F00286547 /* ViewController.swift */; };
 		FC614DF125EE6F9F00286547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614DEF25EE6F9F00286547 /* Main.storyboard */; };
 		FC614DF325EE6FA100286547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC614DF225EE6FA100286547 /* Assets.xcassets */; };
 		FC614DF625EE6FA100286547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614DF425EE6FA100286547 /* LaunchScreen.storyboard */; };
@@ -23,13 +22,17 @@
 		FC614E1525EE70D300286547 /* WalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E0A25EE70D300286547 /* WalletVC.swift */; };
 		FC614E1625EE70D300286547 /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614E0C25EE70D300286547 /* Play.storyboard */; };
 		FC614E1725EE70D300286547 /* PlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E0D25EE70D300286547 /* PlayVC.swift */; };
+		FC614E1E25EE71E600286547 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC614E1A25EE71E600286547 /* SettingCell.xib */; };
+		FC614E1F25EE71E600286547 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E1B25EE71E600286547 /* SettingsVC.swift */; };
+		FC614E2025EE71E600286547 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614E1C25EE71E600286547 /* Settings.storyboard */; };
+		FC614E2125EE71E600286547 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E1D25EE71E600286547 /* SettingCell.swift */; };
+		FC614E2A25EE922000286547 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E2925EE922000286547 /* RoundedCornerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC614DE625EE6F9F00286547 /* KOOEEMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOOEEMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC614DE925EE6F9F00286547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC614DEB25EE6F9F00286547 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC614DED25EE6F9F00286547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC614DF025EE6F9F00286547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC614DF225EE6FA100286547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC614DF525EE6FA100286547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +47,11 @@
 		FC614E0A25EE70D300286547 /* WalletVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletVC.swift; sourceTree = "<group>"; };
 		FC614E0C25EE70D300286547 /* Play.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Play.storyboard; sourceTree = "<group>"; };
 		FC614E0D25EE70D300286547 /* PlayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayVC.swift; sourceTree = "<group>"; };
+		FC614E1A25EE71E600286547 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		FC614E1B25EE71E600286547 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		FC614E1C25EE71E600286547 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		FC614E1D25EE71E600286547 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		FC614E2925EE922000286547 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +84,10 @@
 		FC614DE825EE6F9F00286547 /* KOOEEMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				FC614E2825EE91E100286547 /* Reusable Classes */,
 				FC614DFE25EE70D300286547 /* Features */,
 				FC614DE925EE6F9F00286547 /* AppDelegate.swift */,
 				FC614DEB25EE6F9F00286547 /* SceneDelegate.swift */,
-				FC614DED25EE6F9F00286547 /* ViewController.swift */,
 				FC614DEF25EE6F9F00286547 /* Main.storyboard */,
 				FC614DF225EE6FA100286547 /* Assets.xcassets */,
 				FC614DF425EE6FA100286547 /* LaunchScreen.storyboard */,
@@ -91,6 +99,7 @@
 		FC614DFE25EE70D300286547 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				FC614E1925EE71E600286547 /* Settings */,
 				FC614DFF25EE70D300286547 /* Messages */,
 				FC614E0225EE70D300286547 /* Contacts */,
 				FC614E0525EE70D300286547 /* Add */,
@@ -143,6 +152,25 @@
 				FC614E0D25EE70D300286547 /* PlayVC.swift */,
 			);
 			path = Play;
+			sourceTree = "<group>";
+		};
+		FC614E1925EE71E600286547 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FC614E1A25EE71E600286547 /* SettingCell.xib */,
+				FC614E1B25EE71E600286547 /* SettingsVC.swift */,
+				FC614E1C25EE71E600286547 /* Settings.storyboard */,
+				FC614E1D25EE71E600286547 /* SettingCell.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FC614E2825EE91E100286547 /* Reusable Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FC614E2925EE922000286547 /* RoundedCornerView.swift */,
+			);
+			path = "Reusable Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,10 +234,12 @@
 				FC614E1425EE70D300286547 /* Wallet.storyboard in Resources */,
 				FC614DF325EE6FA100286547 /* Assets.xcassets in Resources */,
 				FC614E1125EE70D300286547 /* Contacts.storyboard in Resources */,
+				FC614E1E25EE71E600286547 /* SettingCell.xib in Resources */,
 				FC614E1625EE70D300286547 /* Play.storyboard in Resources */,
 				FC614E0E25EE70D300286547 /* Messages.storyboard in Resources */,
 				FC614E1325EE70D300286547 /* Add.storyboard in Resources */,
 				FC614DF125EE6F9F00286547 /* Main.storyboard in Resources */,
+				FC614E2025EE71E600286547 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,12 +252,14 @@
 			files = (
 				FC614E1225EE70D300286547 /* AddVC.swift in Sources */,
 				FC614E0F25EE70D300286547 /* MessagesVC.swift in Sources */,
-				FC614DEE25EE6F9F00286547 /* ViewController.swift in Sources */,
 				FC614E1525EE70D300286547 /* WalletVC.swift in Sources */,
 				FC614DEA25EE6F9F00286547 /* AppDelegate.swift in Sources */,
 				FC614DEC25EE6F9F00286547 /* SceneDelegate.swift in Sources */,
+				FC614E2A25EE922000286547 /* RoundedCornerView.swift in Sources */,
 				FC614E1725EE70D300286547 /* PlayVC.swift in Sources */,
 				FC614E1025EE70D300286547 /* ContactsVC.swift in Sources */,
+				FC614E2125EE71E600286547 /* SettingCell.swift in Sources */,
+				FC614E1F25EE71E600286547 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
