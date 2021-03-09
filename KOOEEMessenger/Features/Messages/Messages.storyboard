@@ -10,7 +10,7 @@
         <!--MessagesVC-->
         <scene sceneID="dXP-jC-FZq">
             <objects>
-                <viewController storyboardIdentifier="Messages" id="JiD-Lo-DJo" customClass="MessagesVC" customModule="KOOEE_Messenger" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Messages" id="JiD-Lo-DJo" customClass="MessagesVC" customModule="KOOEEMessenger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sPx-Q2-f4b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

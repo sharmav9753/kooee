@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
 
-class ContactsVC: UIViewController {
+class ContactsVC: CustomViewController {
 
 }

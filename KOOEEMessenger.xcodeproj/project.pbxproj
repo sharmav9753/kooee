@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC465E7C25EF56740023A845 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E7B25EF56740023A845 /* CustomViewController.swift */; };
 		FC614DEA25EE6F9F00286547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614DE925EE6F9F00286547 /* AppDelegate.swift */; };
 		FC614DEC25EE6F9F00286547 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614DEB25EE6F9F00286547 /* SceneDelegate.swift */; };
 		FC614DF125EE6F9F00286547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614DEF25EE6F9F00286547 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC465E7B25EF56740023A845 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		FC614DE625EE6F9F00286547 /* KOOEEMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOOEEMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC614DE925EE6F9F00286547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC614DEB25EE6F9F00286547 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				FC614E2925EE922000286547 /* RoundedCornerView.swift */,
+				FC465E7B25EF56740023A845 /* CustomViewController.swift */,
 			);
 			path = "Reusable Classes";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				FC614DEC25EE6F9F00286547 /* SceneDelegate.swift in Sources */,
 				FC614E2A25EE922000286547 /* RoundedCornerView.swift in Sources */,
 				FC614E1725EE70D300286547 /* PlayVC.swift in Sources */,
+				FC465E7C25EF56740023A845 /* CustomViewController.swift in Sources */,
 				FC614E1025EE70D300286547 /* ContactsVC.swift in Sources */,
 				FC614E2125EE71E600286547 /* SettingCell.swift in Sources */,
 				FC614E1F25EE71E600286547 /* SettingsVC.swift in Sources */,
