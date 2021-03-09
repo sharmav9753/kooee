@@ -7,6 +7,6 @@ class ContentVC: CustomViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = CONTENT
+        self.navigationItem.title = Strings.CONTENT
     }
 }

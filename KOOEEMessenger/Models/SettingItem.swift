@@ -10,8 +10,3 @@ struct SettingItem {
     var type: ItemType
     var value: String?
 }
-
-struct OptionsItem {
-    var title: String?
-    var options: [SettingItem]?
-}

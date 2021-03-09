@@ -7,25 +7,33 @@ class WalletVC: CustomViewController {
 
     @IBOutlet weak var labelBalance: UILabel!
     @IBOutlet weak var labelBitcoinRate: UILabel!
-    @IBOutlet weak var labelAccountBalance: UILabel!
+    @IBOutlet weak var labelEthereumRate: UILabel!
+    @IBOutlet weak var labelBTCBalanceInFiat: UILabel!
+    @IBOutlet weak var labelETHBalanceInFiat: UILabel!
 
     //MARK: Variables
 
-    private var currentBitcoinBalance: Double!
-    private var lastBitcoinRate: Double!
     private var presenter: WalletPresenter?
 
     //MARK: Lifecycle methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.createRightBarItem()
+        self.navigationItem.titleView = createTitleView()
+        self.presenter = WalletPresenter(service: self)
+    }
+
+    //MARK: Private Helper methods
+
+    private func createRightBarItem() {
         let imagePlus = UIImage(systemName: "camera")
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: imagePlus,
             style: .plain, target: self, action: #selector(rightButtonClicked)
         )
         self.navigationItem.rightBarButtonItem?.tintColor = .black
-        self.navigationItem.titleView = createTitleView()
-        self.presenter = WalletPresenter(service: self)
     }
     
     private func createTitleView() -> UIView {
@@ -41,34 +49,34 @@ class WalletVC: CustomViewController {
         return titleLabel
     }
 
+    //MARK: Overriden methods
+
     @objc override func rightButtonClicked() {
 
     }
 }
 
-//MARK: WalletPresenterService implementation
+//MARK: - WalletPresenterService implementation
+
 extension WalletVC: WalletPresenterService {
 
-    func setBitcoinBalance(currentBalance: Double) {
+    func setBalanceInFiat(eth: String, btc: String) {
         DispatchQueue.main.async {
-            self.currentBitcoinBalance = (currentBalance/100000000)
-            self.labelBalance.text = NSString.init(format: "%.2f", self.currentBitcoinBalance) as String
-            if self.lastBitcoinRate != nil {
-                self.labelAccountBalance.text = (self.lastBitcoinRate * self.currentBitcoinBalance).description
-            }
+            self.labelBTCBalanceInFiat.text = btc
+            self.labelETHBalanceInFiat.text = eth
         }
     }
 
-    func setBitcoinRate(bitcoinRate: BitcoinRate) {
-        guard let lastRate = bitcoinRate.USD.last, let symbol = bitcoinRate.USD.symbol else {
-            return
-        }
+    func setBtcBalance(balance: String) {
         DispatchQueue.main.async {
-            self.labelBitcoinRate.text = lastRate.description + " " + symbol + " / BTC"
-            self.lastBitcoinRate = lastRate
-            if self.currentBitcoinBalance != nil {
-                self.labelAccountBalance.text = (self.lastBitcoinRate * self.currentBitcoinBalance).description
-            }
+            self.labelBalance.text = balance
+        }
+    }
+
+    func setRates(eth: String, btc: String) {
+        DispatchQueue.main.async {
+            self.labelBitcoinRate.text = btc
+            self.labelEthereumRate.text = eth
         }
     }
 }

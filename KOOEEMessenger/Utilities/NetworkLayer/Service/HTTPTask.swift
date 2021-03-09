@@ -1,16 +1,18 @@
 import Foundation
 
-public enum HTTPTask {
+enum HTTPTask {
     case request
 
-    case requestParameters(bodyParameters: Parameters?,
-        bodyEncoding: ParameterEncoding,
-        urlParameters: Parameters?)
+    case requestParameters(
+            bodyParameters: Parameters?,
+            bodyEncoding: ParameterEncoding,
+            urlParameters: Parameters?
+         )
 
-    case requestParametersAndHeaders(bodyParameters: Parameters?,
-        bodyEncoding: ParameterEncoding,
-        urlParameters: Parameters?,
-        additionHeaders: HTTPHeaders?)
-
-    // case download, upload...etc
+    case requestParametersAndHeaders(
+            bodyParameters: Parameters?,
+            bodyEncoding: ParameterEncoding,
+            urlParameters: Parameters?,
+            additionHeaders: HTTPHeaders?
+         )
 }

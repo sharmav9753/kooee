@@ -1,11 +1,15 @@
 import Foundation
 
 extension NetworkManager {
-    func getBitcoinRate(completion: @escaping (_ bitcoinRate: BitcoinRate?,_ error: String?)->()){
-        routerCryptoRates.request(.getBitcoinRate) { data, response, error in
-
+    func getCryptoRates(completion: @escaping (_ rate: CryptoRate?, _ error: String?) -> ()) {
+        routerCryptoRates.request(
+            .getCryptoRates(
+                cryptoCurrencies: [CurrencyType.BTC.symbol, CurrencyType.ETH.symbol],
+                fiatCurrencies: [CurrencyType.USD.symbol]
+            )
+        ) { data, response, error in
             if error != nil {
-                completion(nil, NETWORK_ERROR)
+                completion(nil, Strings.NETWORK_ERROR)
             }
 
             if let response = response as? HTTPURLResponse {
@@ -17,13 +21,10 @@ extension NetworkManager {
                         return
                     }
                     do {
-                        print(responseData)
                         let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
-                        print(jsonData)
-                        let apiResponse = try JSONDecoder().decode(BitcoinRate.self, from: responseData)
+                        let apiResponse = try JSONDecoder().decode(CryptoRate.self, from: responseData)
                         completion(apiResponse, nil)
                     }catch {
-                        print(error)
                         completion(nil, NetworkResponse.unableToDecode.rawValue)
                     }
                 case .failure(let networkFailureError):

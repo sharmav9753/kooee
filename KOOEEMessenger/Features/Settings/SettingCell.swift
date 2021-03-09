@@ -3,14 +3,15 @@ import UIKit
 
 class SettingCell: UITableViewCell {
 
-    // MARK: Outlets
+    //MARK: Outlets
 
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var imageViewSetting: UIImageView!
     @IBOutlet weak var textViewSetting: UITextField!
     @IBOutlet weak var inputField: UITextField!
     
-    // MARK: Helper methods
+    //MARK: Helper methods
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         labelTitle.text = ""

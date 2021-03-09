@@ -1,9 +1,10 @@
 /*
- Declare all static constant here.
+ All static constant.
  */
 
-//MARK: Storyboard Names and identifires
-enum StoryboardName : String{
+//MARK: Storyboard names and Identifiers
+
+enum StoryboardName: String{
     case Settings
     case Messages
     case Contacts
@@ -13,17 +14,47 @@ enum StoryboardName : String{
     case Main
 }
 
-enum StoryboardIdentifire : String{
+enum StoryboardIdentifier: String{
     case Settings
 }
 
-//MARK: XIB Names and Identifires
-enum XibNames : String{
+//MARK: XIB Names and Identifiers
+
+enum XIBName: String{
     case SettingCell
 }
 
-enum XibIdentifires : String{
+enum XIBIdentifier: String{
     case SettingCell
 }
 
+//MARK: Currency
 
+enum CurrencyType {
+
+    case USD
+    case BTC
+    case ETH
+
+    var precision: Int {
+        switch self {
+        case .USD:
+            return 2
+        case .BTC:
+            return 5
+        case .ETH:
+            return 5
+        }
+    }
+
+    var symbol: String {
+        switch self {
+        case .USD:
+            return "USD"
+        case .BTC:
+            return "BTC"
+        case .ETH:
+            return "ETH"
+        }
+    }
+}

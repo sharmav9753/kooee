@@ -11,8 +11,7 @@ class MessagesVC: CustomViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.segmentedControl.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 20)], for: .normal)
         self.navigationItem.rightBarButtonItem = nil
-        self.navigationItem.title = MESSAGES
+        self.navigationItem.title = Strings.MESSAGES
     }
 }

@@ -1,0 +1,20 @@
+PODS:
+  - BigInt.swift (1.0.0)
+  - SideMenu (6.5.0)
+
+DEPENDENCIES:
+  - BigInt.swift
+  - SideMenu
+
+SPEC REPOS:
+  trunk:
+    - BigInt.swift
+    - SideMenu
+
+SPEC CHECKSUMS:
+  BigInt.swift: 1e0ddf08d82166e72dfb0fa8d40301d273081afc
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+
+PODFILE CHECKSUM: e797557c4586305ec520a62edbabf6c7d6c79e0b
+
+COCOAPODS: 1.10.1

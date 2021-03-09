@@ -1,20 +1,17 @@
 import Foundation
 
-
-enum NetworkEnvironment {
-    case production
-}
-
 public enum CryptoCurrencyAPI {
     case getBalance(address: String)
 }
 
 extension CryptoCurrencyAPI: EndPointType {
 
+    var version: String {
+        return "v1"
+    }
+
     var environmentBaseURL : String {
-        switch NetworkManager.environment {
-        case .production: return "https://api.blockcypher.com/v1/btc/main/addrs/"
-        }
+        return "https://api.blockcypher.com/\(version)"
     }
 
     var baseURL: URL {
@@ -25,7 +22,7 @@ extension CryptoCurrencyAPI: EndPointType {
     var path: String {
         switch self {
         case .getBalance(let address):
-            return "\(address)/balance"
+            return "/btc/main/addrs/\(address)/balance"
         }
     }
 

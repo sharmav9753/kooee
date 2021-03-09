@@ -1,6 +1,6 @@
 import Foundation
 
-enum NetworkResponse:String {
+enum NetworkResponse: String {
     case success
     case authenticationError = "You need to be authenticated first."
     case badRequest = "Bad request"
@@ -16,8 +16,6 @@ enum Result<String>{
 }
 
 struct NetworkManager {
-    static let environment : NetworkEnvironment = .production
-    static let MovieAPIKey = ""
     let routerCryptoCurrency = Router<CryptoCurrencyAPI>()
     let routerCryptoRates = Router<CryptoRatesAPI>()
 

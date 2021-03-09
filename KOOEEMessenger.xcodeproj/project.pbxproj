@@ -13,7 +13,7 @@
 		FC07E29325F6ABB300960319 /* KMCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC07E29225F6ABB300960319 /* KMCustomButton.swift */; };
 		FC465E7C25EF56740023A845 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC465E7B25EF56740023A845 /* CustomViewController.swift */; };
 		FC50D25F25F74A12001F29A4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC50D25E25F74A12001F29A4 /* Colors.swift */; };
-		FC50D26925F751F7001F29A4 /* StringsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC50D26825F751F7001F29A4 /* StringsFile.swift */; };
+		FC50D26925F751F7001F29A4 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC50D26825F751F7001F29A4 /* Strings.swift */; };
 		FC614DEA25EE6F9F00286547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614DE925EE6F9F00286547 /* AppDelegate.swift */; };
 		FC614DEC25EE6F9F00286547 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614DEB25EE6F9F00286547 /* SceneDelegate.swift */; };
 		FC614DF125EE6F9F00286547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614DEF25EE6F9F00286547 /* Main.storyboard */; };
@@ -34,10 +34,10 @@
 		FC614E2025EE71E600286547 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC614E1C25EE71E600286547 /* Settings.storyboard */; };
 		FC614E2125EE71E600286547 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E1D25EE71E600286547 /* SettingCell.swift */; };
 		FC614E2A25EE922000286547 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC614E2925EE922000286547 /* RoundedCornerView.swift */; };
+		FCC1157025F7A8F000786EAC /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC1156F25F7A8F000786EAC /* Helper.swift */; };
 		FCE9335225F0EC630061E8DB /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9335125F0EC630061E8DB /* HTTPMethod.swift */; };
 		FCE9335625F0EC880061E8DB /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9335525F0EC880061E8DB /* EndPointType.swift */; };
 		FCE9335925F0ECAF0061E8DB /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9335825F0ECAF0061E8DB /* HTTPTask.swift */; };
-		FCE9335C25F0ECE80061E8DB /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9335B25F0ECE80061E8DB /* NetworkRouter.swift */; };
 		FCE9335F25F0ED040061E8DB /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9335E25F0ED040061E8DB /* NetworkLogger.swift */; };
 		FCE9336225F0ED210061E8DB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9336125F0ED210061E8DB /* Router.swift */; };
 		FCE9336525F0ED4D0061E8DB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9336425F0ED4D0061E8DB /* NetworkManager.swift */; };
@@ -47,7 +47,7 @@
 		FCE9337125F0EE3D0061E8DB /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9337025F0EE3D0061E8DB /* URLParameterEncoder.swift */; };
 		FCE9337525F0F0520061E8DB /* GetCryptoBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9337425F0F0520061E8DB /* GetCryptoBalance.swift */; };
 		FCE9337925F0F5550061E8DB /* CryptoBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9337825F0F5550061E8DB /* CryptoBalance.swift */; };
-		FCE9338325F10AC00061E8DB /* BitcoinRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9338225F10AC00061E8DB /* BitcoinRate.swift */; };
+		FCE9338325F10AC00061E8DB /* CryptoRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9338225F10AC00061E8DB /* CryptoRate.swift */; };
 		FCE9338625F10E530061E8DB /* GetBitcoinRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9338525F10E530061E8DB /* GetBitcoinRate.swift */; };
 		FCE9338A25F112040061E8DB /* CryptoRatesEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9338925F112040061E8DB /* CryptoRatesEndPoints.swift */; };
 		FCE933EE25F125850061E8DB /* WalletPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE933ED25F125850061E8DB /* WalletPresenter.swift */; };
@@ -65,7 +65,7 @@
 		FC50D25825F6B146001F29A4 /* SFProDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Light.ttf"; sourceTree = "<group>"; };
 		FC50D25925F6B146001F29A4 /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		FC50D25E25F74A12001F29A4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		FC50D26825F751F7001F29A4 /* StringsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsFile.swift; sourceTree = "<group>"; };
+		FC50D26825F751F7001F29A4 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		FC614DE625EE6F9F00286547 /* KOOEEMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOOEEMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC614DE925EE6F9F00286547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC614DEB25EE6F9F00286547 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,10 +88,10 @@
 		FC614E1C25EE71E600286547 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		FC614E1D25EE71E600286547 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		FC614E2925EE922000286547 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		FCC1156F25F7A8F000786EAC /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		FCE9335125F0EC630061E8DB /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		FCE9335525F0EC880061E8DB /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		FCE9335825F0ECAF0061E8DB /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
-		FCE9335B25F0ECE80061E8DB /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		FCE9335E25F0ED040061E8DB /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		FCE9336125F0ED210061E8DB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FCE9336425F0ED4D0061E8DB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		FCE9337025F0EE3D0061E8DB /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 		FCE9337425F0F0520061E8DB /* GetCryptoBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCryptoBalance.swift; sourceTree = "<group>"; };
 		FCE9337825F0F5550061E8DB /* CryptoBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoBalance.swift; sourceTree = "<group>"; };
-		FCE9338225F10AC00061E8DB /* BitcoinRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinRate.swift; sourceTree = "<group>"; };
+		FCE9338225F10AC00061E8DB /* CryptoRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRate.swift; sourceTree = "<group>"; };
 		FCE9338525F10E530061E8DB /* GetBitcoinRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBitcoinRate.swift; sourceTree = "<group>"; };
 		FCE9338925F112040061E8DB /* CryptoRatesEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRatesEndPoints.swift; sourceTree = "<group>"; };
 		FCE933ED25F125850061E8DB /* WalletPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPresenter.swift; sourceTree = "<group>"; };
@@ -141,7 +141,8 @@
 			children = (
 				FC07E28925F66BE000960319 /* Constants.swift */,
 				FC50D25E25F74A12001F29A4 /* Colors.swift */,
-				FC50D26825F751F7001F29A4 /* StringsFile.swift */,
+				FC50D26825F751F7001F29A4 /* Strings.swift */,
+				FCC1156F25F7A8F000786EAC /* Helper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -324,7 +325,6 @@
 				FCE9335125F0EC630061E8DB /* HTTPMethod.swift */,
 				FCE9335525F0EC880061E8DB /* EndPointType.swift */,
 				FCE9335825F0ECAF0061E8DB /* HTTPTask.swift */,
-				FCE9335B25F0ECE80061E8DB /* NetworkRouter.swift */,
 				FCE9335E25F0ED040061E8DB /* NetworkLogger.swift */,
 				FCE9336125F0ED210061E8DB /* Router.swift */,
 			);
@@ -354,7 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				FCE9337825F0F5550061E8DB /* CryptoBalance.swift */,
-				FCE9338225F10AC00061E8DB /* BitcoinRate.swift */,
+				FCE9338225F10AC00061E8DB /* CryptoRate.swift */,
 				FC07E28525F646AD00960319 /* SettingItem.swift */,
 			);
 			path = Models;
@@ -484,13 +484,12 @@
 				FCE9336E25F0EE200061E8DB /* ParameterEncoding.swift in Sources */,
 				FCE9336B25F0EE020061E8DB /* JSONParameterEncoder.swift in Sources */,
 				FCE9336525F0ED4D0061E8DB /* NetworkManager.swift in Sources */,
-				FCE9338325F10AC00061E8DB /* BitcoinRate.swift in Sources */,
+				FCE9338325F10AC00061E8DB /* CryptoRate.swift in Sources */,
 				FCE9338625F10E530061E8DB /* GetBitcoinRate.swift in Sources */,
 				FC07E28A25F66BE000960319 /* Constants.swift in Sources */,
 				FCE9335925F0ECAF0061E8DB /* HTTPTask.swift in Sources */,
 				FC614E1225EE70D300286547 /* AddVC.swift in Sources */,
 				FCE9337925F0F5550061E8DB /* CryptoBalance.swift in Sources */,
-				FCE9335C25F0ECE80061E8DB /* NetworkRouter.swift in Sources */,
 				FC614E0F25EE70D300286547 /* MessagesVC.swift in Sources */,
 				FCE9335625F0EC880061E8DB /* EndPointType.swift in Sources */,
 				FC614E1525EE70D300286547 /* WalletVC.swift in Sources */,
@@ -503,9 +502,10 @@
 				FCE9337125F0EE3D0061E8DB /* URLParameterEncoder.swift in Sources */,
 				FC614E2A25EE922000286547 /* RoundedCornerView.swift in Sources */,
 				FCE9336225F0ED210061E8DB /* Router.swift in Sources */,
-				FC50D26925F751F7001F29A4 /* StringsFile.swift in Sources */,
+				FC50D26925F751F7001F29A4 /* Strings.swift in Sources */,
 				FC614E1725EE70D300286547 /* ContentVC.swift in Sources */,
 				FC465E7C25EF56740023A845 /* CustomViewController.swift in Sources */,
+				FCC1157025F7A8F000786EAC /* Helper.swift in Sources */,
 				FC614E1025EE70D300286547 /* ContactsVC.swift in Sources */,
 				FC50D25F25F74A12001F29A4 /* Colors.swift in Sources */,
 				FCE9336825F0EDC90061E8DB /* CryptoCurrencyEndPoints.swift in Sources */,

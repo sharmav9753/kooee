@@ -6,14 +6,14 @@ class SettingsVC: UIViewController {
     @IBOutlet weak var tableViewSettings: UITableView!
     private var dataSource: [SettingItem]?
     
-    // MARK: LifeCycle Methods
+    //MARK: LifeCycle Methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)
         prepareUserData()
         self.tableViewSettings.register(
-            UINib(nibName: XibNames.SettingCell.rawValue, bundle: nil), forCellReuseIdentifier: XibIdentifires.SettingCell.rawValue)
+            UINib(nibName: XIBName.SettingCell.rawValue, bundle: nil), forCellReuseIdentifier: XIBIdentifier.SettingCell.rawValue)
     }
     
     private func prepareUserData() {
@@ -33,14 +33,14 @@ class SettingsVC: UIViewController {
 
 extension SettingsVC:  UITableViewDelegate, UITableViewDataSource {
 
-    // MARK: TableView Methods
+    //MARK: TableView Methods
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         dataSource?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = self.tableViewSettings.dequeueReusableCell(withIdentifier: XibIdentifires.SettingCell.rawValue, for: indexPath) as? SettingCell,
+        guard let cell = self.tableViewSettings.dequeueReusableCell(withIdentifier: XIBIdentifier.SettingCell.rawValue, for: indexPath) as? SettingCell,
               let item = self.dataSource?[indexPath.row] else {
             return SettingCell()
         }

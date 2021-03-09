@@ -5,7 +5,7 @@ extension NetworkManager {
         routerCryptoCurrency.request(.getBalance(address: address)) { data, response, error in
 
             if error != nil {
-                completion(nil, NETWORK_ERROR)
+                completion(nil, Strings.NETWORK_ERROR)
             }
 
             if let response = response as? HTTPURLResponse {
@@ -17,13 +17,10 @@ extension NetworkManager {
                         return
                     }
                     do {
-                        print(responseData)
                         let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
-                        print(jsonData)
                         let apiResponse = try JSONDecoder().decode(CryptoBalance.self, from: responseData)
                         completion(apiResponse, nil)
-                    }catch {
-                        print(error)
+                    } catch {
                         completion(nil, NetworkResponse.unableToDecode.rawValue)
                     }
                 case .failure(let networkFailureError):

@@ -1,15 +1,13 @@
 import Foundation
 
 public enum CryptoRatesAPI {
-    case getBitcoinRate
+    case getCryptoRates(cryptoCurrencies: [String], fiatCurrencies: [String])
 }
 
 extension CryptoRatesAPI: EndPointType {
 
     var environmentBaseURL : String {
-        switch NetworkManager.environment {
-        case .production: return "https://blockchain.info"
-        }
+        return "https://min-api.cryptocompare.com"
     }
 
     var baseURL: URL {
@@ -19,8 +17,8 @@ extension CryptoRatesAPI: EndPointType {
 
     var path: String {
         switch self {
-        case .getBitcoinRate:
-            return "/ticker"
+        case .getCryptoRates:
+            return "/data/pricemulti"
         }
     }
 
@@ -30,8 +28,15 @@ extension CryptoRatesAPI: EndPointType {
 
     var task: HTTPTask {
         switch self {
-        case .getBitcoinRate:
-            return .request
+        case let .getCryptoRates(cryptoCurrencies, fiatCurrencies):
+            let fsyms = cryptoCurrencies.joined(separator: ",")
+            let tsyms = fiatCurrencies.joined(separator: ",")
+
+            return .requestParameters(
+                bodyParameters: nil,
+                bodyEncoding: .urlEncoding,
+                urlParameters: ["fsyms": fsyms, "tsyms": tsyms]
+            )
         }
     }
 

@@ -8,6 +8,7 @@ class CustomViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         let imageSettings = UIImage(systemName: "line.horizontal.3")
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(
             image: imageSettings,
@@ -26,7 +27,7 @@ class CustomViewController: UIViewController {
     @objc func showSettings() {
         let settingsStoryboard = UIStoryboard(name: StoryboardName.Settings.rawValue, bundle: nil)
         self.navigationController?.present(
-            createSideMenu(with: settingsStoryboard.instantiateViewController(withIdentifier: StoryboardIdentifire.Settings.rawValue)),
+            createSideMenu(with: settingsStoryboard.instantiateViewController(withIdentifier: StoryboardIdentifier.Settings.rawValue)),
             animated: true
         )
     }

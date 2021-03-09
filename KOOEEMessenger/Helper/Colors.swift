@@ -1,9 +1,10 @@
 /*
- Declare all colors here, which are used inside the app.
+ All colors.
  */
 
 import UIKit
-extension UIColor {
+
+extension UIColor{
     static let background = UIColor.init(named: "backgroundColor")
     static let fadded_text = UIColor.init(named: "faddedText")
     static let primary = UIColor.init(named: "primaryColor")
