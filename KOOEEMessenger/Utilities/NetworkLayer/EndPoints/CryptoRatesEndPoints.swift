@@ -1,19 +1,14 @@
 import Foundation
 
-
-enum NetworkEnvironment {
-    case production
+public enum CryptoRatesAPI {
+    case getBitcoinRate
 }
 
-public enum CryptoCurrencyAPI {
-    case getBalance(address: String)
-}
-
-extension CryptoCurrencyAPI: EndPointType {
+extension CryptoRatesAPI: EndPointType {
 
     var environmentBaseURL : String {
         switch NetworkManager.environment {
-        case .production: return "https://api.blockcypher.com/v1/btc/main/addrs/"
+        case .production: return "https://blockchain.info"
         }
     }
 
@@ -24,8 +19,8 @@ extension CryptoCurrencyAPI: EndPointType {
 
     var path: String {
         switch self {
-        case .getBalance(let address):
-            return "\(address)/balance"
+        case .getBitcoinRate:
+            return "/ticker"
         }
     }
 
@@ -35,8 +30,8 @@ extension CryptoCurrencyAPI: EndPointType {
 
     var task: HTTPTask {
         switch self {
-        case .getBalance:
-            return .requestParameters(bodyParameters: nil, bodyEncoding: .jsonEncoding, urlParameters: nil)
+        case .getBitcoinRate:
+            return .request
         }
     }
 

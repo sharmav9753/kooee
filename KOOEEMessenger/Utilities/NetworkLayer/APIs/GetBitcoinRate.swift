@@ -1,8 +1,8 @@
 import Foundation
 
 extension NetworkManager {
-    func getBalance(address: String, completion: @escaping (_ CryptoBalance: CryptoBalance?,_ error: String?)->()){
-        routerCryptoCurrency.request(.getBalance(address: address)) { data, response, error in
+    func getBitcoinRate(completion: @escaping (_ bitcoinRate: BitcoinRate?,_ error: String?)->()){
+        routerCryptoRates.request(.getBitcoinRate) { data, response, error in
 
             if error != nil {
                 completion(nil, NETWORK_ERROR)
@@ -20,7 +20,7 @@ extension NetworkManager {
                         print(responseData)
                         let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
                         print(jsonData)
-                        let apiResponse = try JSONDecoder().decode(CryptoBalance.self, from: responseData)
+                        let apiResponse = try JSONDecoder().decode(BitcoinRate.self, from: responseData)
                         completion(apiResponse, nil)
                     }catch {
                         print(error)
